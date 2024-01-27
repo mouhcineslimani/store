@@ -13,7 +13,7 @@ import {
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename=".">
       <Routes>
         <Route path="/" element={<Main />}>
           <Route index element={<ProductStore />} />
