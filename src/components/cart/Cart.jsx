@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./Cart.css";
 import { useCart } from "../../hook/useContextCartProvider";
 import CartItem from "./CartItem";

@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./Contact.css";
 import pic from "../../assets/images/pic1.jpg";
 const Contact = () => {

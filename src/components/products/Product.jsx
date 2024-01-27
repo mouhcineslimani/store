@@ -1,4 +1,4 @@
-import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
+import {  useLocation, useNavigate, useParams } from "react-router-dom";
 import panier from "../../assets/images/panier.png";
 import "./Products.css";
 import { useEffect, useState } from "react";
@@ -29,9 +29,9 @@ function Product({ product }) {
       setProductItem(product);
       return;
     }
-  }, [id, product]);
+  }, [id, product,location.pathname]);
 
-  const { state, dispatch } = useCart();
+  const {  dispatch } = useCart();
 
   const cartHandler = (product) => {  
     const item = {
@@ -68,7 +68,7 @@ function Product({ product }) {
         <div className="card flex" >
           <div className="card-float flex">
             <span className="panier" onClick={()=>cartHandler(productItem)}>
-              <img src={panier}/>
+              <img src={panier} alt='product pic'/>
             </span>
             <span className="price" style={showProduct ? { left: '-100px' } : {}}>
               {productItem?.price}
@@ -79,7 +79,7 @@ function Product({ product }) {
             <span className="btn" id={productItem.id} onClick={showHandler}>&#x2139;</span>
           </div>
           <div className="card-image">
-            <img src={productItem?.image} alt="product image" />
+            <img src={productItem.image} alt="product image" />
           </div>
           <div className="card-title" title={productItem?.title}>
           {showProduct ? productItem.title : (productItem?.title ? productItem.title.slice(0, 15) : '')} {' '}

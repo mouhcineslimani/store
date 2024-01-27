@@ -3,7 +3,7 @@ import "./Cart.css";
 import { useCart } from "../../hook/useContextCartProvider";
 import { useNavigate } from "react-router-dom";
 function CartItem({ product }) {
-  const { state, dispatch } = useCart();
+  const {  dispatch } = useCart();
 const navigate = useNavigate()
   const increaseHandler = id => {
     dispatch({

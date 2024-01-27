@@ -7,7 +7,7 @@ import { useCart } from "../../hook/useContextCartProvider";
 import { CartItem } from "../index";
 
 function Header() {
-  const { state, dispatch } = useCart();
+  const { state } = useCart();
   const [showCart, setShowCart] = useState(false);
   const MAX_ITEMS_TO_DISPLAY = 3;
 
