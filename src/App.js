@@ -15,7 +15,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/store/" element={<Main />}>
+        <Route path="/" element={<Main />}>
           <Route index element={<ProductStore />} />
           <Route path="products" element={<Products />} />
           <Route path="products/:id" element={<Product />} />
