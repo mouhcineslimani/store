@@ -13,7 +13,7 @@ import {
 
 function App() {
   return (
-    <BrowserRouter basename=".">
+    <BrowserRouter basename={window.location.pathname || ""}>
       <Routes>
         <Route path="/" element={<Main />}>
           <Route index element={<ProductStore />} />
