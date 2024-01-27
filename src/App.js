@@ -13,7 +13,7 @@ import {
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.DEV ? '/' : '/ms-portfolio/'} >
       <Routes>
         <Route path="/" element={<Main />}>
           <Route index element={<ProductStore />} />
