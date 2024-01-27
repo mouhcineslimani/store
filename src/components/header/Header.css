@@ -1,0 +1,113 @@
+.navbar {
+    flex-direction: column;
+}
+
+.navbar .top-header {
+    justify-content: space-between;
+    width: 100%;
+    padding: 6px 40px;
+    background: var(--color-milk);
+}
+
+.navbar .top-header img:nth-child(2) {
+    width: 20px;
+}
+
+.navbar .bottom-header {
+    padding-block: 10px;
+    background: var(--color-main);
+    width: 100%;
+    justify-content: center;
+    box-shadow: 2px 2px 2px black;
+}
+
+.navbar .bottom-header .link {
+    margin-right: 10px;
+    margin-left: 10px;
+    color: white;
+    padding: 10px;
+}
+
+.navbar .bottom-header .link:hover {
+    background: #000;
+    -o-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.panier-container {
+    position: relative;
+}
+
+.panier-container .one {
+    cursor: pointer;
+}
+
+.panier-container img {
+    height: 25px;
+}
+
+.panier-container span.count {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    z-index: 1001 !important;
+    background: red;
+    width: 20px;
+    height: 20px;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -o-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.panier-container .cart {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: var(--color-milk);
+    width: 350px;
+    height: max-content;
+    padding: 10px;
+    border: 2px solid var(--color-main);
+}
+
+.panier-container .show {
+    display: flex;
+    flex-direction: column;
+}
+
+.view-more-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    margin-top: 10px;
+}
+
+.custome-panier .table-row .table-cell:nth-child(2) {
+    display: none;
+}
+
+.custome-panier .table-row .table-cell {
+    padding: 3px;
+
+}
+
+.custome-panier .table-row .btns>span:last-child {
+    display: none;
+}
+
+.custome-panier img {
+    height: 50px;
+}

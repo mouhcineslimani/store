@@ -1,0 +1,21 @@
+.app {
+    flex-direction: column;
+}
+
+.app>div {
+    width: 100%;
+}
+
+.app-main-content {
+    padding: 20px 40px;
+}
+
+.app-header {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+}
+
+.app-hero {
+    margin-top: 138px;
+}

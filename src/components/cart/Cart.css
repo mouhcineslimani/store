@@ -1,0 +1,129 @@
+.shopping-cart-container {
+    margin: 10px;
+}
+
+.shopping-cart-title {
+    text-align: center;
+    margin-block: 20px;
+}
+
+.shopping-cart-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 30%;
+    gap: 15px;
+}
+
+.data-table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.table-row {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+}
+
+.table-row.header {
+    font-weight: bold;
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.table-cell {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.table-cell:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-input {
+    width: 50px;
+    text-align: center;
+    margin: 0 5px;
+    height: 30px;
+}
+
+.table-cell>span {
+    cursor: pointer;
+    padding: 5px;
+    background-color: var(--color-primary);
+    color: #fff;
+    border-radius: 3px;
+}
+
+.btns>span {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 3px;
+}
+
+.btns>span:first-child {
+    background: red;
+}
+
+.cart-quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.totals {
+    margin-block: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: solid 2px var(--color-main);
+    height: max-content;
+}
+
+.totals>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.totals-item {
+    margin-bottom: 10px;
+}
+
+.checkout {
+    border: 0;
+    margin-top: 20px;
+    padding: 6px 25px;
+    background-color: var(--color-primary);
+    color: #fff;
+    font-size: 25px;
+    border-radius: 3px;
+}
+
+.checkout:hover {
+    background: var(--color-main);
+}
+
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 10px;
+}
+
+.pagination>span {
+    padding: 10px;
+    background: var(--color-primary);
+    margin: auto 5px;
+    color: white;
+    cursor: pointer;
+}

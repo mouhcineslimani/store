@@ -1,0 +1,61 @@
+.contact-container {
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contact-container .contact {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.contact-container .contact img {
+    height: 250px;
+}
+
+.contact-container .contact form {
+    height: 250px;
+    flex-direction: column;
+}
+
+.contact-container .contact form>* {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.contact-container .contact form div>* {
+    flex: 1;
+
+}
+
+.contact-container .contact form div input:first-child {
+    margin-right: 5px;
+}
+
+.contact-container .contact form div input:last-child {
+    margin-left: 5px;
+}
+
+.contact-container .contact form input, .contact-container .contact form textarea {
+    padding: 10px;
+}
+
+.contact-container .contact form input:focus, .contact-container .contact form textarea:focus {
+    border: var(--color-primary) 2px solid;
+}
+
+.contact-container .contact form textarea {
+    resize: none;
+}
+
+.contact-container .contact .btn {
+    background: var(--color-main);
+    border: 2px var(--color-main) solid;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.contact-container .contact .btn:hover {
+    background: var(--color-primary);
+}

@@ -1,0 +1,43 @@
+:root {
+  --color-main: #1E2F97;
+  --color-primary: #1AA7EC;
+  --color-secondary: #4ADEDE;
+  --color-third: #797EF6;
+  --color-snow: #fffafa;
+  --color-beige: #f5f5dc;
+  --color-milk: #fdfff5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--color-milk);
+}
+
+.flex {
+  display: flex;
+
+}
+
+.grid {
+  display: grid;
+}
+
+.flex, .grid {
+  align-items: center;
+}
+
+.active {}
+
+input, textarea {
+  outline: none;
+}

@@ -1,0 +1,43 @@
+.home h1 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 30px;
+}
+
+.home .home-categories {
+    background: var(--color-primary);
+    justify-content: center;
+    text-align: center;
+
+    cursor: pointer;
+    padding: 0;
+}
+
+.home .home-categories>span {
+    flex: 1;
+    border: 1px solid var(--color-secondary);
+    height: 100%;
+    padding: 20px;
+    color: white;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.home .home-categories>span:hover {
+    background: var(--color-main);
+}
+
+
+.home .search {
+    padding-block: 20px;
+    justify-content: end;
+    width: 100%;
+}
+
+.home .search input {
+    padding: 10px;
+    width: 100%;
+    border: 2px solid var(--color-main);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
